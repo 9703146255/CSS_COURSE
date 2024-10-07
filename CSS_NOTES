@@ -1,0 +1,127 @@
+
+1. Universal Selector (*)
+2. Type Selector (Element Selector)
+3. Class Selector (.)
+4. ID Selector (#)
+5. Attribute Selector
+6. Pseudo-class Selector
+7. Pseudo-element Selector
+8. Descendant Selector
+9. Child Selector (>)
+10. Adjacent Sibling Selector (+)
+11. General Sibling Selector (~)
+12. Group Selector (,)
+====================================================================
+Universal Selector (*)
+====================================================================
+Targets all elements on the page.
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+Type Selector (Element Selector)
+Targets all elements of a given type (e.g., all p tags or div tags).
+
+
+p {
+    color: blue;
+}
+
+====================================================================
+Class Selector (.)
+====================================================================
+Targets elements with a specific class.
+
+
+.class-name {
+    font-size: 14px;
+}
+====================================================================
+ID Selector (#)
+Targets an element with a specific ID (should be unique within a page).
+====================================================================
+
+
+#header {
+    background-color: gray;
+}
+====================================================================
+Attribute Selector
+====================================================================
+Targets elements based on their attributes.
+
+
+/* Targets input elements with the type attribute set to "text" */
+input[type="text"] {
+    border: 1px solid black;
+}
+====================================================================
+Pseudo-class Selector
+====================================================================
+Targets elements in a specific state, like :hover, :active, :first-child.
+
+
+a:hover {
+    color: red;
+}
+
+====================================================================
+Pseudo-element Selector
+====================================================================
+Targets a specific part of an element, like ::before, ::after, ::first-line.
+
+
+p::before {
+    content: "Note: ";
+    font-weight: bold;
+}
+====================================================================
+Descendant Selector
+====================================================================
+Targets elements that are nested within a specified element.
+
+
+div p {
+    color: green;
+}
+
+====================================================================
+Child Selector (>)
+====================================================================
+Targets direct children of an element.
+
+
+div > p {
+    margin-left: 10px;
+}
+====================================================================
+Adjacent Sibling Selector (+)
+====================================================================
+Targets an element that is immediately next to another element.
+
+
+h1 + p {
+    font-style: italic;
+}
+
+====================================================================
+General Sibling Selector (~)
+====================================================================
+Targets all siblings of a specified element.
+
+
+h1 ~ p {
+    color: gray;
+}
+====================================================================
+Group Selector (,)
+====================================================================
+Targets multiple selectors at once.
+
+h1, h2, h3 {
+    font-family: Arial, sans-serif;
+}
