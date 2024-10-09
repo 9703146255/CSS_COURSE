@@ -125,3 +125,72 @@ Targets multiple selectors at once.
 h1, h2, h3 {
     font-family: Arial, sans-serif;
 }
+
+
+list-style-type
+================
+----------------------------------------------------------------------------------------------------------------------------------
+For Unordered Lists (<ul>):
+----------------------------------------------------------------------------------------------------------------------------------
+1. disc: ● A filled circle (default).
+2. circle: ○ A hollow circle.
+3. square: ■ A filled square.
+4. none: No marker (removes the bullet or any symbol).
+
+----------------------------------------------------------------------------------------------------------------------------------
+For Ordered Lists (<ol>):
+----------------------------------------------------------------------------------------------------------------------------------
+1. decimal: Numbers (1, 2, 3, ...).
+2. decimal-leading-zero: Numbers padded with leading zeros (01, 02, 03, ...).
+3. lower-roman: Lowercase Roman numerals (i, ii, iii, ...).
+4. upper-roman: Uppercase Roman numerals (I, II, III, ...).
+5. lower-alpha: Lowercase letters (a, b, c, ...).
+6. upper-alpha: Uppercase letters (A, B, C, ...).
+7. lower-latin: Same as lower-alpha (a, b, c, ...).
+8. upper-latin: Same as upper-alpha (A, B, C, ...).
+9. lower-greek: Lowercase Greek letters (α, β, γ, ...).
+
+----------------------------------------------------------------------------------------------------------------------------------
+Global List Style (<ul> or <ol>):
+----------------------------------------------------------------------------------------------------------------------------------
+1. inherit: Inherits the list-style-type value from its parent element.
+2. initial: Sets the property to its default value.
+3. unset: Resets the property, inheriting from its parent if applicable, or setting to the default.
+
+
+
+
+Padding 
+========
+Padding is the space inside an element, between the content and the border.
+
+element {
+    padding: value; /* Can be a single value or multiple values */
+}
+
+----------------------------------------------------------
+Values:
+----------------------------------------------------------
+padding: 10px;: Sets equal padding on all four sides (top, right, bottom, left).
+padding: 10px 20px;: Sets vertical (top and bottom) padding to 10px and horizontal (right and left) padding to 20px.
+padding: 10px 20px 30px 40px;: Sets padding in a clockwise order: top (10px), right (20px), bottom (30px), and left (40px).
+
+----------------------------------------------------------
+Padding can also be set individually for each side:
+----------------------------------------------------------
+padding-top: 10px;
+padding-right: 15px;
+padding-bottom: 20px;
+padding-left: 25px;
+
+
+
+    HomeServicecontactAbout
+
+
+
+    Home	Service		contact 	About
+
+
+    padding: 14px 16px;
+
